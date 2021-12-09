@@ -116,6 +116,30 @@
 
 
   <main>
+      <div class="container-fluid py-5">
+          <div class="row py-5 text-center justify-content-center">
+              <?php foreach ($discs as $disk) : ?>
+                <div class="col-2 mb-4">
+                    <div class="disk p-3 ">
+                        <img class="p-2" src="<?php echo $disk['poster'] ?>" alt="" />
+                        <h2 class="fs-5 disk_title text-light p-2">
+                        <?php echo $disk['title'] ?>
+                        </h2>
+                <div class="disk_author fs-6">
+                    <?php echo $disk['author'] ?>
+
+                </div>
+                <div class="disk_year fs-6">
+                    <?php echo $disk['year'] ?>
+                </div>
+                </div>
+            </div>
+            
+      <?php endforeach; ?>
+
+          </div>
+      </div>
+      
 
   </main>
     

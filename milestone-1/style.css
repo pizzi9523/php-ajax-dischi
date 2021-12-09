@@ -1,3 +1,30 @@
 header {
   background-color: #2e3a46;
 }
+
+main{
+  background-color: #1e2d3b;
+  height: 100%;
+}
+
+.disk {
+  height: 100%;
+  margin: 10px;
+  background-color: #2e3a46;
+}
+
+.disk:hover {
+  background-color: #103d64;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+
+.disk_title,
+.disk_author,
+.disk_year {
+  color: #758080;
+}
