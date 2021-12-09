@@ -31,6 +31,16 @@
   <main>
       <div id="app">
 
+        <div class="filte_genre_box text-light mx-5">
+            <label for="genre">Genere:</label>
+            <select class="mx-2 mt-5 px-2"name="genre" id="genre" v-model="genreSelected" @change="filterGenre">
+              <option value="">All</option>
+              <option v-for="genre in genres " :value="genre">{{genre}}</option>
+          </select>
+
+        </div>
+          
+
         <div class="container-fluid py-5">
             <div class="row py-5 text-center justify-content-center">
                     <div class="col-2 mb-4" v-for="disk in discs">
